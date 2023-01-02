@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Splash&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="pic/8217.jpg" />
+    <script src="javascript.js"></script>
+    
+    <title>Aashiyana</title>
+  </head>
+  <body>
+    <!-- navbar start here -->
+
+    <div id="navbar">
+      <div class="logo">
+     
+        <img src="pic/logo.png" class="logomain" />
+      </div>
+      <div class="cat1">
+        <ul class="ulcat1 st">
+          <li class="abc">
+           <a href="#"><i class="fa fa-home" aria-hidden="true"></i> &nbsp; Home Loans</a> 
+          </li>
+          <li class="abc">
+            <a href="#"><i class="fa fa-cc-diners-club" aria-hidden="true"></i>&nbsp;
+              Rent/Sell Property</a> 
+          </li>
+          <li class="abc">
+          <a href="#"><i class="fa fa-mobile" aria-hidden="true"></i> &nbsp; Download App</a>  
+          </li>
+          <li class="abc">
+           <a href="loginpage.html"> <i class="fa fa-sign-in" aria-hidden="true"></i> &nbsp; Log In</a> 
+          </li>
+        </ul>
+      </div>
+      <div class="navbarbutton">
+        <!-- <label for="toggle">
+          &#9776;
+          <input type="checkbox" id="toggle" />
+          <ul class="navbarbuttonlist">
+            <li><a href="#">Pay Rent</a></li>
+            <li><a href="#">Rent Agreement</a></li>
+            <li><a href="#">Property Management</a></li>
+            <li><a href="#">Home Loans</a></li>
+            <li><a href="#">Home Interiors</a></li>
+            <li><a href="#">Housing Premium</a></li>
+            <li><a href="#">Legal Services</a></li>
+            <li><a href="#">Home Services</a></li>
+          </ul>
+        </label> -->
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <div class="overlay-content">
+            <a href="#">Pay Rent</a>
+            <a href="#">Rent Agreement</a>
+            <a href="#">Property Management</a>
+            <a href="#">Home Loans</a>
+            <a href="#">Home Interiors</a>
+            <a href="#">Housing Premium</a>
+            <a href="#">Legal Services</a>
+            <a href="#">Home Services</a>
+          </div>
+        </div>
+        <span style="font-size: 22px; cursor: pointer" onclick="openNav()"
+          >&#9776;</span>
+        <ul class="ulcat1de">
+                
+          <li class="abc">
+              <a href="loginpage.html"> <i class="fa fa-sign-in" aria-hidden="true"></i> &nbsp; Log In</a>
+          </li>
+      </ul>
+      </div>
+    </div>
+    <!-- navbar end here -->
+
+    <!-- second nav bar start here -->
+
+    <div id="listcity">
+      <ul class="ullistcity">
+        <li><a href="#">Delhi</a></li>
+        <li><a href="#">Gurgaon</a></li>
+        <li><a href="#">Noida</a></li>
+        <li><a href="#">Bangalore</a></li>
+        <li><a href="#">Mumbai</a></li>
+        <li><a href="#">Pune</a></li>
+        <li><a href="#">Goa</a></li>
+        <li><a href="#">Kolkata</a></li>
+      </ul>
+    </div>
+
+    <!-- second navbar end here -->
+
+    <!-- search bar div start here -->
+
+    <div class="searchdiv">
+      <p class="searchdivp f">India's only real estate platform with</p>
+      <p class="searchdivp2 f">
+        <span class="f"><b>10,000+ highly rated sellers</b></span>
+      </p>
+      <form class="searchdivform">
+        <input
+          type="search"
+          class="searchdivinput"
+          placeholder="Search for locality, landmark, project, or builder"
+        />
+        <button class="searchdivbutton">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </form>
+
+      <!-- <div class="searchdivd2">
+        <p class="searchdivd2h1 f">Sell or Rent your property</p>
+        <p class="searchdivd2h2 f">
+          for <span class="f"><b>free on Aashiyana!</b></span>
+        </p>
+        <p class="searchdivd2p">
+          Become a part of the growing Aashiyana family. As a promise to our
+          real-estate agent community, all our listings are completely free &
+          always will be. Now you can grow your business happily. Further more,
+          over a million buyers visit us every month, giving you the audience
+          that you need. Download our Aashiyana seller app to avail all these
+          benefits & conveniently follow up with your clients.
+        </p>
+      </div> -->
+    </div>
+
+    <!-- find div start here -->
+
+    <div class="find">
+      <p class="findp">What Can We Help You <b>Find?</b></p>
+      <div class="findcat">
+        <div class="findcatd1">
+          <div class="findcatd1img">
+            <img src="pic/buy.jpg" />
+          </div>
+
+         <p class="abds"> <a href="product-list.html">Buy a new home</a> </p>
+        </div>
+        <div class="findcatd2">
+          <div class="findcatd2img">
+            <img src="pic/sell.jpg" />
+          </div>
+
+          <p>Sell a home</p>
+        </div>
+        <div class="findcatd3">
+          <div class="findcatd3img">
+            <img src="pic/rent.jpg" />
+          </div>
+
+          <p>Rent a home</p>
+        </div>
+        <div class="findcatd3 fcatd">
+          <div class="findcatd3img">
+            <img src="pic/loan.jpg" />
+          </div>
+
+          <p>Home Loans</p>
+        </div>
+        <div class="findcatd3 fcatd">
+          <div class="findcatd3img">
+            <img src="pic/agreement.jpg" />
+          </div>
+
+          <p>Rent Agreement</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- properties div start here -->
+
+    <!-- <div class="property">
+      <p class="propertyp">
+        We've got properties for <span><b>everyone</b></span>
+      </p>
+      <div class="propertyd">
+        <div class="propertyd1">
+          <h3>15051</h3>
+          <p class="propertyp1">Owner Properties</p>
+          <p class="propertyp2">Explore</p>
+        </div>
+        <div class="propertyd2">
+          <h3>15051</h3>
+          <p>Owner Properties</p>
+          <p>Explore</p>
+        </div>
+        <div class="propertyd3">
+          <h3>15051</h3>
+          <p>Owner Properties</p>
+          <p>Explore</p>
+        </div>
+        <div class="propertyd4">
+          <h3>15051</h3>
+          <p>Owner Properties</p>
+          <p>Explore</p>
+        </div>
+      </div>
+    </div> -->
+    <div class="banner3b">
+      <div class="property">
+        <p class="propertyp">
+          We've got properties for <span><b>everyone</b></span>
+        </p>
+        <div class="propertyd">
+          <div class="propertyd1">
+            <h3>15051</h3>
+            <p class="propertyp1">Owner Properties</p>
+            <p class="propertyp2 bfd">Explore &nbsp; &nbsp; &#8594;</p>
+          </div>
+          <div class="propertyd2">
+            <h3>546</h3>
+            <p class="propertyp1">Projects</p>
+            <p class="propertyp2 bfd">Explore &nbsp; &nbsp; &#8594;</p>
+          </div>
+          <div class="propertyd3">
+            <h3>27904</h3>
+            <p class="propertyp1">Ready to move-in</p>
+            <p class="propertyp2 bfd">Explore &nbsp; &nbsp; &#8594;</p>
+          </div>
+          <div class="propertyd4">
+            <h3>6222</h3>
+            <p class="propertyp1">Budget Homes</p>
+            <p class="propertyp2 bfd">Explore &nbsp; &nbsp; &#8594;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- featured project start here  -->
+    <div class="feature">
+      <p class="featurep">Featured <b>Projects</b></p>
+      <p class="featurep2">Exclusive showcase of top projects</p>
+      <div class="featured">
+        <div class="featurediv">
+          <div class="featureimg">
+            <img src="pic/feature.jpg" alt="" />
+          </div>
+          <div class="featurect">
+            <div class="featurectd1">
+              <h3>Bellanza Phase 1 Wing A B C</h3>
+              <p class="a">By The Prestige Group</p>
+              <p class="a">Mulund West , Mumbai</p>
+              <p class="featurectp">Marketed By Balrajeshwar Real Estate</p>
+            </div>
+            <div class="featurectd2">
+              <p class="a" style="padding-left: 35%">2,3 BHK Flats</p>
+              <p>
+                <span></span>&#8377;<b>1.39 crore</b>
+                <span class="a">onwards</span>
+              </p>
+              <p class="featurectd2p">OFFER</p>
+            </div>
+          </div>
+        </div>
+        <div class="featurediv">
+          <div class="featureimg">
+            <img src="pic/skyscrapers-1893201_640.jpg" alt="" />
+          </div>
+          <div class="featurect">
+            <div class="featurectd1">
+              <h3>Broadway Residency</h3>
+              <p class="a">By The Broadway Group</p>
+              <p class="a">Marine Drive , Mumbai</p>
+              <p class="featurectp">Marketed By Ranjeet Real Estate</p>
+            </div>
+            <div class="featurectd2">
+              <p class="a" style="padding-left: 35%">2,3 BHK Flats</p>
+              <p>
+                <span></span>&#8377;<b>2.10 crore</b>
+                <span class="a">onwards</span>
+              </p>
+              <p class="featurectd2p">OFFER</p>
+            </div>
+          </div>
+        </div>
+        <div class="featurediv">
+          <div class="featureimg">
+            <img src="pic/city (2).jpg" alt="" />
+          </div>
+          <div class="featurect">
+            <div class="featurectd1">
+              <h3>The Logix Green Residency</h3>
+              <p class="a">By The Logix Group</p>
+              <p class="a">Sector 142 , Noida</p>
+              <p class="featurectp">Marketed By Mittal Real Estate</p>
+            </div>
+            <div class="featurectd2">
+              <p class="a" style="padding-left: 35%">2,3 BHK Flats</p>
+              <p>
+                <span></span>&#8377;<b>1.05 crore</b>
+                <span class="a">onwards</span>
+              </p>
+              <p class="featurectd2p">OFFER</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- feature collection start here  -->
+
+    <div class="coll">
+      <p class="collp1">Featured <b> Collection</b></p>
+      <p class="collp2">Handpicked projects for you</p>
+      <div class="colldiv">
+        <div class="colldiv1">
+          <div class="bfds">
+            <h3>Independent House</h3>
+            <p>Enjoy higher degree of Freedom & Privacy</p>
+          </div>
+        </div>
+        <div class="colldiv2">
+          <div class="bfds">
+            <h3>Ready to Move-In</h3>
+            <p>Comfortable homes available for immediate use</p>
+          </div>
+        </div>
+        <div class="colldiv3">
+          <div class="bfds">
+            <h3>Luxury</h3>
+            <p>Premiuim housing for the lifstyle-conscious</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- trending project start here  -->
+    <div class="banner3a">
+      <div class="trend">
+        <p class="trendh3">Trending <b>Projects</b></p>
+        <p class="trendp">Most sought-after projects</p>
+        <div class="trenddiv">
+          <div class="trendd1">
+            <div class="trendd11">
+              <div class="trendd11a">
+                <img src="pic/exzenterhaus-2175925_640.jpg" alt="" />
+              </div>
+              <div class="trendd11b">
+                <h3>Sky Mansion</h3>
+                <p class="ab">by Cushman & Wakefield</p>
+                <p class="ac">3 BHK Apartment</p>
+                <p class="ad">Chattarpur, Delhi</p>
+                <h4 class="ae">&#8377;4.88 Cr</h4>
+              </div>
+            </div>
+            <div class="trendd12">
+              <div class="trendd12a"><img src="pic/t2.jpg" alt="" /></div>
+              <div class="trendd12b">
+                <h3>S Gambhir Metrowalk</h3>
+                <p class="ab">by S. Gambhir Buildtech</p>
+                <p class="ac">2,3 BHK Apartments</p>
+                <p class="ad">Dwarka, Delhi</p>
+                <h4 class="ae">&#8377;35.01 L - 75.01 L</h4>
+              </div>
+            </div>
+            <div class="trendd13">
+              <div class="trendd13a"><img src="pic/t3.jpg" alt="" /></div>
+              <div class="trendd13b">
+                <h3>Mittal Godgift</h3>
+                <p class="ab">by Mittal Builders</p>
+                <p class="ac">2,3 BHK Apartments</p>
+                <p class="ad">Sec 142, Noida</p>
+                <h4 class="ae">&#8377;33 L - 40 L</h4>
+              </div>
+            </div>
+          </div>
+          <div class="trendd2">
+            <div class="trendd21">
+              <div class="trendd21a"><img src="pic/t4.jpg" alt="" /></div>
+              <div class="trendd21b">
+                <h3>Manhar Mitya Homes</h3>
+                <p class="ab">by Mitya Homes</p>
+                <p class="ac">2,3 BHK Apartments</p>
+                <p class="ad">Andheri East, Mumbai</p>
+                <h4 class="ae">&#8377;6.87 Cr</h4>
+              </div>
+            </div>
+            <div class="trendd22 trnd">
+              <div class="trendd22a"><img src="pic/t5.jpg" alt="" /></div>
+              <div class="trendd22b">
+                <h3>Green Valley</h3>
+                <p class="ab">by Green Valley Homes</p>
+                <p class="ac">2,3 BHK Apartments</p>
+                <p class="ad">Marine Drive, Mumbai</p>
+                <h4 class="ae">&#8377;7.54 Cr</h4>
+              </div>
+            </div>
+            <div class="trendd23 trnd">
+              <div class="trendd23a">
+                <img src="pic/architecture-4431284_640.jpg" alt="" />
+              </div>
+              <div class="trendd23b">
+                <h3>Godrej South Estate</h3>
+                <p class="ab">by Godrej Group</p>
+                <p class="ac">3 BHK Apartments</p>
+                <p class="ad">Bangalore</p>
+                <h4 class="ae">&#8377;23.6 L - 59.99 L</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- housing expert start here -->
+    <div class="ex">
+      <p class="exp">Housing <b>Experts</b></p>
+      <p class="exp2">
+        Sellers with complete knowledge about locality and verified listing.
+      </p>
+      <div class="exdiv">
+        <div class="exdivd1">
+          <div class="exdiv1x">
+            <div class="exdivd1a">
+              <div class="imgcir1"><img src="pic/man1 (2).jpg" alt="" /></div>
+            </div>
+            <div class="exdivd1b">
+              <p class="ba">Mr kawaljeet Oberoi</p>
+              <p class="bb">Housing Expert</p>
+              <p class="font"><b>32 Years</b></p>
+              <p class="bc">Experience</p>
+            </div>
+          </div>
+          <div class="exdiv1y"><p class="bd">Shalimar Bagh</p></div>
+        </div>
+        <div class="exdivd2">
+          <div class="exdiv2x">
+            <div class="exdivd2a">
+              <div class="imgcir2"><img src="pic/man1 (1).jpg" alt="" /></div>
+            </div>
+            <div class="exdivd2b">
+              <p class="ba">Surendra Mittal</p>
+              <p class="bb">Housing Expert</p>
+              <p class="font"><b>27 Years</b></p>
+              <p class="bc">Experience</p>
+            </div>
+          </div>
+          <div class="exdiv2y">
+            <p class="bd">Vikaspuri</p>
+            <p class="bd">Janakpuri</p>
+          </div>
+        </div>
+        <div class="exdivd3">
+          <div class="exdiv3x">
+            <div class="exdivd3a">
+              <div class="imgcir3"><img src="pic/man1 (3).jpg" alt="" /></div>
+            </div>
+            <div class="exdivd3b">
+              <p class="ba">Ravi Shrivastavaa</p>
+              <p class="bb">Housing Expert</p>
+              <p class="font"><b>19 Years</b></p>
+              <p class="bc">Experience</p>
+            </div>
+          </div>
+          <div class="exdiv3y"><p class="bd">Vasant Kunj</p></div>
+        </div>
+        <div class="exdivd4">
+          <div class="exdiv4x">
+            <div class="exdivd4a">
+              <div class="imgcir4"><img src="pic/man1 (4).jpg" alt="" /></div>
+            </div>
+            <div class="exdivd4b">
+              <p class="ba">Lucky Batra</p>
+              <p class="bb">Housing Expert</p>
+              <p class="font"><b>18 Years</b></p>
+              <p class="bc">Experience</p>
+            </div>
+          </div>
+          <div class="exdiv4y">
+            <p class="bd">Sector 16 Rohini</p>
+            <p class="bd abcde">Matiala</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- banner start here -->
+    <!-- <div class="banner2">
+      <img src="pic/banner real estate.webp" class="banner2img" />
+    </div> -->
+
+    <div class="super-container">
+      <div class="container">
+        <!-- Carousel container -->
+        <div class="carousel-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="myCarousel fade">
+            <!-- <div class="numbertext">1 / 3</div> -->
+            <img src="pic/banner1.jpg" />
+            <!-- <div class="text">Caption Text</div> -->
+          </div>
+
+          <div class="myCarousel fade">
+            <!-- <div class="numbertext">2 / 3</div> -->
+            <img src="pic/banner 2.png" />
+            <!-- <div class="text">Caption Two</div> -->
+          </div>
+
+          <div class="myCarousel fade">
+            <!-- <div class="numbertext">3 / 3</div> -->
+            <img src="pic/banner3.jpg" />
+            <!-- <div class="text">Caption Three</div> -->
+          </div>
+          <div class="myCarousel fade">
+            <!-- <div class="numbertext">3 / 3</div> -->
+            <img src="pic/banner 4.png" />
+            <!-- <div class="text">Caption Three</div> -->
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+        <!-- The dots/circles -->
+        <div style="text-align: center" class="dota">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- property services start here  -->
+
+    <div class="service">
+      <p class="servicep">Property <b>Services</b></p>
+      <div class="servicediv">
+        <div class="serviced1">
+          <div class="serviced11"><img src="pic/home loan.jpg" alt="" /></div>
+          <div class="serviced12">
+            <h3>Home Loans</h3>
+            <p>View and compare your best offers and apply online</p>
+          </div>
+        </div>
+        <div class="serviced2">
+          <div class="serviced21"><img src="pic/pay rent.jpg" alt="" /></div>
+          <div class="serviced22">
+            <h3>Pay Rent</h3>
+            <p>Pay your rent using Credit Cars & earn rewards</p>
+          </div>
+        </div>
+        <div class="serviced3">
+          <div class="serviced31">
+            <img src="pic/legal service.jpg" alt="" />
+          </div>
+          <div class="serviced32">
+            <h3>Legal Services</h3>
+            <p>Get expert legal help for all property-related matters</p>
+          </div>
+        </div>
+        <div class="serviced4">
+          <div class="serviced41">
+            <img src="pic/Vastu-Shastra_2-768x480.jpg" alt="" />
+          </div>
+          <div class="serviced42">
+            <h3>Vastu</h3>
+            <p>Consult the best Vastu Experts for your home or office</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- post property div start here -->
+
+    <div class="post">
+      <div class="postdiv1">
+        <p class="postdiv1p1">
+          Post your Property for <b><span class="postdiv1free">Free</span></b>
+        </p>
+        <p class="postdiv1p2">List it on Aashiyana and get genuine leads</p>
+      </div>
+      <div class="postdiv2">
+        <button class="postdiv2button">Post Property</button>
+      </div>
+    </div>
+
+    <!-- banner 1 start here  -->
+    <!-- <div class="banner1">
+        <img src="pic/banner blue.png" class="banner1img" />
+      </div> -->
+    <div class="banner1">
+      <!-- popular localities div start here  -->
+
+      <div class="popular">
+        <p class="popularp" style="color: #444">
+          <span class="popularpspan"> Popular localities in </span>
+          <select
+            name="city"
+            id="popularcity"
+            style="
+              color: #444;
+              border: none;
+              border-radius: 5px;
+              background-color: rgba(0, 0, 0, 0.7);
+              color: white;
+              padding-left: 10px;
+            "
+          >
+            <option value="Noida">Noida</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Gurgaon">Gurgaon</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Goa">Goa</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Pune">Pune</option>
+            <option value="Kolkata">Kolkata</option>
+          </select>
+        </p>
+        <div class="populard">
+          <div class="popularddiv1">
+            <p class="h1"><b>Sector 63</b></p>
+            <p class="bcs">215 top rated sellers</p>
+            <p class="bcs">3234 active listing</p>
+          </div>
+          <div class="popularddiv2">
+            <p class="h1"><b>Sector 142</b></p>
+            <p class="bcs">180 top rated sellers</p>
+            <p class="bcs">2236 active listing</p>
+          </div>
+          <div class="popularddiv3 contd2">
+            <p class="h1"><b>Sector 51</b></p>
+            <p class="bcs">256 top rated sellers</p>
+            <p class="bcs">2874 active listing</p>
+          </div>
+          <div class="popularddiv4">
+            <p class="h1"><b>Sector 74</b></p>
+            <p class="bcs">267 top rated sellers</p>
+            <p class="bcs">2456 active listing</p>
+          </div>
+          <div class="popularddiv4 contd2">
+            <p class="h1"><b>Sector 59</b></p>
+            <p class="bcs">203 top rated sellers</p>
+            <p class="bcs">2134 active listing</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- partof banner start here  -->
+
+    <div class="partof">
+      <img src="pic/Screenshot 2022-07-14 160944.png" alt="" />
+    </div>
+
+    <!-- upperfooter start here -->
+    <div class="upperfooter">
+      <div class="upperfooterdiv1">
+        <p class="upfd1p">About <b>Aashiyana</b></p>
+        <p class="upfd1p2">
+          Launched in 2022, Aashiyana is India's No.1 online Property
+          marketplace to buy, sell, and rent residential and commercial
+          properties. Adjudged as the most preferred real estate portal in India
+          by various independent surveys.
+        </p>
+        <div class="upperfooterdiv1d">
+          <div class="upperfooterdiv1dd1">
+            <button class="pb1">
+              <i class="fa fa-google fa-lg" aria-hidden="true"></i>
+              <span><b>Google Play</b></span>
+            </button>
+            <button class="pb2">
+              <i class="fa fa-apple fa-lg" aria-hidden="true"></i>
+              <span><b>App Store</b></span>
+            </button>
+          </div>
+          <div class="upperfooterdiv1dd2">
+            <a href="#"
+              ><i
+                class="fa fa-facebook-square fa-2x"
+                aria-hidden="true"
+                style="color: #4267b2"
+              ></i>
+              &nbsp;</a
+            >
+            <a href="#"
+              ><i
+                class="fa fa-youtube-square fa-2x"
+                aria-hidden="true"
+                style="color: #ff0000"
+              ></i
+              >&nbsp;</a
+            >
+            <a href="#">
+              <i
+                class="fa fa-twitter-square fa-2x"
+                aria-hidden="true"
+                style="color: #00acee"
+              ></i>
+              &nbsp;</a
+            >
+            <a href="#">
+              <i
+                class="fa fa-linkedin-square fa-2x"
+                aria-hidden="true"
+                style="color: #0072b1"
+              ></i
+              >&nbsp;</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="upperfooterdiv2">
+        <div class="upfd2d1">
+          <p class="upfd2d1p">Properties in India</p>
+          <ul class="upfd2d1ul">
+            <li><a href="#">Property in Noida</a></li>
+            <li><a href="#">Property in Delhi</a></li>
+            <li><a href="#">Property in Gurgaon</a></li>
+            <li><a href="#">Property in Kolkata</a></li>
+          </ul>
+          <ul class="upfd2d1ul2">
+            <li><a href="#">Property in Mumbai</a></li>
+            <li><a href="#">Property in Pune</a></li>
+            <li><a href="#">Property in Bangalore</a></li>
+            <li><a href="#">Property in Goa</a></li>
+          </ul>
+        </div>
+        <div class="upfd2d2">
+          <p class="upfd2d2p">New Projects in India</p>
+          <ul class="upfd2d2ul">
+            <li><a href="#">Projects in Noida</a></li>
+            <li><a href="#">Projects in Delhi</a></li>
+            <li><a href="#">Projects in Gurgaon</a></li>
+            <li><a href="#">Projects in Kolkata</a></li>
+          </ul>
+          <ul class="upfd2d2ul2">
+            <li><a href="#">Projects in Mumbai</a></li>
+            <li><a href="#">Projects in Pune</a></li>
+            <li><a href="#">Projects in Bangalore</a></li>
+            <li><a href="#">Projects in Goa</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- lower footer start here -->
+
+    <div class="lowerfooter">
+      <ul class="lowerfooterul">
+        <a href="#"><li>Sitemap</li></a>
+        <a href="#"><li>Terms & Conditions</li></a>
+        <a href="#"><li>Privacy Policy</li></a>
+        <a href="#"><li>Blog</li></a>
+        <a href="#"><li>Careers</li></a>
+        <a href="#"><li>Testimonials</li></a>
+        <a href="#"><li>Feedback</li></a>
+        <a href="#"><li>Unsubscribe</li></a>
+        <a href="#"><li>Help Center</li></a>
+        <a href="#"><li>Sales Enquiry</li></a>
+        <a href="#"><li>Buy Our Services</li></a>
+      </ul>
+    </div>
+
+    <!-- disclaimer start here -->
+
+    <div class="dis">
+      <p>
+        <b>Disclaimer:</b> Aashiyana Services Limited is only an intermediary
+        offering its platform to advertise properties of Seller for a
+        Customer/Buyer/User coming on its Website and is not and cannot be a
+        party to or privy to or control in any manner any transactions between
+        the Seller and the Customer/Buyer/User. All the offers and discounts on
+        this Website have been extended by
+        <a href="#" style="color: rgba(18, 98, 215, 1)" class="abcdefrt">Read more</a>
+      </p>
+    </div>
+
+    <!-- trademark start here -->
+
+    <div class="trade">
+      <p>
+        All trademarks, logos and names are properties of their respective
+        owners. All Rights Reserved. © Copyright 2022 Aashiyana Services Limited
+      </p>
+    </div>
+  </body>
+</html>

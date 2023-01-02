@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+/* global class here  */
+.spana {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: url("empty.gif");
+}
+.logo2 {
+  position: relative;
+}
+.c {
+  color: #999;
+  cursor: pointer;
+}
+.h:hover {
+  color: rgba(18, 98, 215, 1);
+  cursor: pointer;
+}
+/* navbar start here */
+
+#navbar {
+  width: auto;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+}
+
+.logomain {
+  width: 105px;
+  height: 50px;
+  margin-left: 30px;
+  margin-top: 4px;
+}
+.cat1 {
+  margin-left: 43%;
+}
+.fa {
+  transition: transform 0.2s;
+}
+.abc:hover .fa {
+  transform: scale(1.6);
+}
+.st {
+  list-style-type: none;
+  display: flex;
+}
+.st li {
+  padding: 18px 18px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.st li:hover {
+  color: rgba(18, 98, 215, 1);
+  cursor: pointer;
+}
+.navbarbutton {
+  padding: 15px 10px 10px;
+  margin-right: 2%;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 8%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 40px;
+}
+
+/* login start here  */
+
+.wrap {
+  /* padding: 0px 0px; */
+  background-image: url("pic/bg.png");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  min-height: 100%;
+}
+.logo2 img {
+  max-width: 30%;
+}
+.wrap input {
+  background-color: #f5f8fa;
+  border-color: #f5f8fa;
+  color: #5e6278;
+}
+.wrap input:focus {
+  box-shadow: none;
+}
+
+.wrap .submit_btn {
+  padding: 12px;
+  font-weight: 500;
+}
+.wrap .login_with {
+  padding: 8px 12px;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+  font-size: 15px;
+  margin: 0px 10px;
+}
+.wrap .submit_btn:focus,
+.wrap .login_with:focus {
+  box-shadow: none;
+}
+.wrap .login_with:hover {
+  background-color: #e3e3e3;
+  border-color: #e3e3e3;
+}
+.wrap .login_with img {
+  width: 80%;
+}

@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Splash&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="product-list.css" />
+    <link rel="icon" type="image/x-icon" href="pic/8217.jpg" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+    <script src="product-list.js"></script>
+
+
+
+
+    <title>Aashiyana</title>
+</head>
+
+<body>
+    <!-- navbar start here -->
+
+    <div id="navbar">
+        <div class="logo">
+            <a href="homepage.html"> <span class="spana"></span></a>
+            <img src="pic/logo.png" class="logomain" />
+        </div>
+        <div class="cat1">
+            <ul class="ulcat1 st">
+                <li class="abc">
+                    <a href="#"><i class="fa fa-home" aria-hidden="true"></i> &nbsp; Home Loans</a>
+                </li>
+                <li class="abc">
+                    <a href="#"><i class="fa fa-cc-diners-club" aria-hidden="true"></i>&nbsp;
+                        Rent/Sell Property</a>
+                </li>
+                <li class="abc">
+                    <a href="#"><i class="fa fa-mobile" aria-hidden="true"></i> &nbsp; Download App</a>
+                </li>
+                <li class="abc">
+                    <a href="loginpage.html"> <i class="fa fa-sign-in" aria-hidden="true"></i> &nbsp; Log In</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbarbutton">
+
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#">Pay Rent</a>
+                    <a href="#">Rent Agreement</a>
+                    <a href="#">Property Management</a>
+                    <a href="#">Home Loans</a>
+                    <a href="#">Home Interiors</a>
+                    <a href="#">Housing Premium</a>
+                    <a href="#">Legal Services</a>
+                    <a href="#">Home Services</a>
+                </div>
+            </div>
+            <span style="font-size: 22px; cursor: pointer" onclick="openNav()">&#9776;</span>
+            <ul class="ulcat1de st">
+                
+                <li class="abc">
+                    <a href="loginpage.html"> <i class="fa fa-sign-in" aria-hidden="true"></i> &nbsp; Log In</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- navbar end here -->
+    <!-- search bar start here  -->
+    <div class="navbar2">
+        <div class="navbarsell">
+            <h3 class="nh3"><a href="#"> Buy New Home </a>
+                <hr>
+            </h3>
+        </div>
+        <div class="navbarsell2">
+            <h4 class="nh3_1"><i class="fa fa-star-o" aria-hidden="true"></i> &nbsp; Save Search</h4>
+        </div>
+
+
+    </div>
+
+    <div class="navmain">
+
+        <div class="navbar3">
+            <div class="sortd2">
+                <h4>Sort By</h4>
+                <button class="nvd3btn2">
+                    <select name="Sort by" id="Sort1" class="abcdef">
+                        <option value="Price">Price</option>
+                        <option value="Bed">Beds</option>
+                        <option value="sqft">Sqft</option>
+                        <option value="Bath">Bath</option>
+                        <option value="Year Built">Year Built</option>
+                        <option value="Created At">Created At</option>
+
+                    </select>
+                </button>
+            </div>
+            <div class="sortd3">
+                <h4>Sort DIR</h4>
+                <button class="nvd3btn2">
+                    <select name="Sort by2" id="asec" class="abcdef">
+                        <option value="ascending">Ascending</option>
+                        <option value="Descending">Descending</option>
+
+                    </select>
+                </button>
+            </div>
+            <div class="sortd4">
+                <h4>Results</h4>
+                <button class="nvd3btn2">
+                    <select name="nm" id="nm" class="abcdef">
+                        <option value="12">09</option>
+                        <option value="24">18</option>
+                        <option value="48">27</option>
+                    </select>
+                </button>
+            </div>
+
+            <div class="nvd1">
+                <input type="text" placeholder="City, Zip, Neighborhood, Adderesses">
+            </div>
+            <div class="nvd2">
+                <h4>Price</h4>
+                <button>
+                    <select name="Min" id="Pricemin" class="abcde">
+                        <option value="MIN">Min</option>
+                        <option value="50K">50K</option>
+                        <option value="100K">100K</option>
+                        <option value="2 Lakh">2 Lakh</option>
+                        <option value="4 Lakh">4 Lakh</option>
+                        <option value="6 Lakh">6 Lakh</option>
+                    </select>
+                </button>
+                <button class="nvd2btn2">
+                    <select name="Max" id="Pricemax" class="abcde">
+                        <option value="Max">Max</option>
+                        <option value="10 Lakh">10 Lakh</option>
+                        <option value="20 Lakh">20 Lakh</option>
+                        <option value="35 Lakh">35 Lakh</option>
+                        <option value="50 Lakh">50 Lakh</option>
+                        <option value="70 Lakh">70 Lakh</option>
+                    </select>
+                </button>
+            </div>
+            <div class="nvd3">
+                <h4>Beds</h4>
+                <button>
+                    <select name="Min" id="bedsmin" class="abcde">
+                        <option value="MIN">Min</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </button>
+                <button class="nvd3btn2">
+                    <select name="Max" id="Bedmax" class="abcde">
+                        <option value="Max">Max</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </button>
+            </div>
+            <div class="nvd4">
+                <!-- <h4> <a href="#">More Filters</a> </h4>  -->
+                <button class="ba"><i class="fa fa-search fa-2x" aria-hidden="true"></i></button>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <!-- sortbar start here  -->
+
+        <!-- <div class="sort">
+            <div class="sortd1">
+                <h3> 1784 results found</h3>
+            </div>
+           
+        </div> -->
+    </div>
+
+    <!-- Top Searches start here  -->
+
+    <div class="feature">
+        <p class="featurep">Top <b>Results</b></p>
+        <p class="featurep2" >Exclusive Properties for you</p>
+        <div class="featured">
+            
+                <div class="featurediv">
+                    <a href="product-detail1.html"><span class="spana"></span></a>
+                    <div class="featureimg">
+                        <img src="pic/projects new (3).jpg" alt="" />
+                    </div>
+                    <div class="featurect">
+                        <div class="featurectd1">
+                            <h3>Saya Residency</h3>
+                            <p class="a">By The Saya Group</p>
+                            <p class="a">Sector 142 , Noida</p>
+                            <p class="featurectp">Marketed By Mittal Real Estate</p>
+                        </div>
+                        <div class="featurectd2">
+                            <p class="a" style="padding-left: 36%">2,3 BHK Flats</p>
+                            <p style="font-size: 15px;
+                            padding-left: 4px;">
+                                <span></span>&#8377;<b>1.93 crore</b>
+                                <span class="a">onwards</span>
+                            </p>
+                            <p class="featurectd2p">OFFER</p>
+                        </div>
+                    </div>
+                </div>
+           
+           
+            <div class="featurediv">
+                <div class="featureimg">
+                    <img src="pic/projects new (1).jpg" alt="" />
+                </div>
+                <div class="featurect">
+                    <div class="featurectd1">
+                        <h3>Titoo Phase 3 Wing 1 2 3</h3>
+                        <p class="a">By The Titoo Group</p>
+                        <p class="a">Sec 63 , Noida</p>
+                        <p class="featurectp">Marketed By Titoo Real Estate</p>
+                    </div>
+                    <div class="featurectd2">
+                        <p class="a" style="padding-left: 36%">2,3 BHK Flats</p>
+                        <p style="font-size: 15px;
+                        padding-left: 4px;">
+                            <span></span>&#8377;<b>1.99 crore</b>
+                            <span class="a">onwards</span>
+                        </p>
+                        <p class="featurectd2p">OFFER</p>
+                    </div>
+                </div>
+            </div>
+            <div class="featurediv">
+                <div class="featureimg">
+                    <img src="pic/projects new (2).jpg" alt="" />
+                </div>
+                <div class="featurect">
+                    <div class="featurectd1">
+                        <h3>Panchvati Residency</h3>
+                        <p class="a">By The Panchang Group</p>
+                        <p class="a">Ashok Nagar , New Delhi</p>
+                        <p class="featurectp">Marketed By Jain Real Estate</p>
+                    </div>
+                    <div class="featurectd2">
+                        <p class="a" style="padding-left: 36%">2,3 BHK Flats</p>
+                        <p style="font-size: 15px;
+                        padding-left: 4px;">
+                            <span></span>&#8377;<b>1.38 crore</b>
+                            <span class="a">onwards</span>
+                        </p>
+                        <p class="featurectd2p">OFFER</p>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+    <div class="feature">
+
+        <div class="featured">
+            <div class="featurediv">
+                <div class="featureimg">
+                    <img src="pic/projects new (4).jpg" alt="" />
+                </div>
+                <div class="featurect">
+                    <div class="featurectd1">
+                        <h3>Bellanza Phase 1 Wing A B C</h3>
+                        <p class="a">By The Prestige Group</p>
+                        <p class="a">Dwarka , New Delhi</p>
+                        <p class="featurectp">Marketed By Ranjeet Real Estate</p>
+                    </div>
+                    <div class="featurectd2">
+                        <p class="a" style="padding-left: 36%">2,3 BHK Flats</p>
+                        <p style="font-size: 15px;
+                        padding-left: 4px;">
+                            <span></span>&#8377;<b>1.39 crore</b>
+                            <span class="a">onwards</span>
+                        </p>
+                        <p class="featurectd2p">OFFER</p>
+                    </div>
+                </div>
+            </div>
+            <div class="featurediv">
+                <div class="featureimg">
+                    <img src="pic/projects new (5).jpg" alt="" />
+                </div>
+                <div class="featurect">
+                    <div class="featurectd1">
+                        <h3>Golokdham Residency</h3>
+                        <p class="a">By The Golok Group</p>
+                        <p class="a">Rohini , Delhi</p>
+                        <p class="featurectp">Marketed By Pinoka Real Estate</p>
+                    </div>
+                    <div class="featurectd2">
+                        <p class="a" style="padding-left: 36%">2,3 BHK Flats</p>
+                        <p style="font-size: 15px;
+                        padding-left: 4px;">
+                            <span></span>&#8377;<b>2.75 crore</b>
+                            <span class="a">onwards</span>
+                        </p>
+                        <p class="featurectd2p">OFFER</p>
+                    </div>
+                </div>
+            </div>
+            <div class="featurediv">
+                <div class="featureimg">
+                    <img src="pic/projects new (6).jpg" alt="" />
+                </div>
+                <div class="featurect">
+                    <div class="featurectd1">
+                        <h3>The Logix Green Residency</h3>
+                        <p class="a">By The Logix Group</p>
+                        <p class="a">Sector 142 , Noida</p>
+                        <p class="featurectp">Marketed By Darshan Real Estate</p>
+                    </div>
+                    <div class="featurectd2">
+                        <p class="a" style="padding-left: 36%">2,3 BHK Flats</p>
+                        <p style="font-size: 15px;
+                        padding-left: 4px;">
+                            <span></span>&#8377;<b>1.05 crore</b>
+                            <span class="a">onwards</span>
+                        </p>
+                        <p class="featurectd2p">OFFER</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature">
+        <div class="featured">
+            <div class="featurediv">
+                <div class="featureimg">
+                    <img src="pic/Project New 7 (2).jpg" alt="" />
+                </div>
+                <div class="featurect">
+                    <div class="featurectd1">
+                        <h3>Jaipuria Residency</h3>
+                        <p class="a">By The Prestige Group</p>
+                        <p class="a">Indirapuram , Gaziabad</p>
+                        <p class="featurectp">Marketed By Balrajeshwar Real Estate</p>
+                    </div>
+                    <div class="featurectd2">
+                        <p class="a" style="padding-left: 36%">2,3 BHK Flats</p>
+                        <p style="font-size: 15px;
+                        padding-left: 4px;">
+                            <span></span>&#8377;<b>1.05 crore</b>
+                            <span class="a">onwards</span>
+                        </p>
+                        <p class="featurectd2p">OFFER</p>
+                    </div>
+                </div>
+            </div>
+            <div class="featurediv">
+                <div class="featureimg">
+                    <img src="pic/Project New 7 (3).jpg" alt="" />
+                </div>
+                <div class="featurect">
+                    <div class="featurectd1">
+                        <h3>Broadway Residency</h3>
+                        <p class="a">By The Broadway Group</p>
+                        <p class="a">Sec 51 , Noida</p>
+                        <p class="featurectp">Marketed By Manjeet Real Estate</p>
+                    </div>
+                    <div class="featurectd2">
+                        <p class="a" style="padding-left: 36%">2,3 BHK Flats</p>
+                        <p style="font-size: 15px;
+                        padding-left: 4px;">
+                            <span></span>&#8377;<b>2.10 crore</b>
+                            <span class="a">onwards</span>
+                        </p>
+                        <p class="featurectd2p">OFFER</p>
+                    </div>
+                </div>
+            </div>
+            <div class="featurediv">
+                <div class="featureimg">
+                    <img src="pic/Project New 7 (1).jpg" alt="" />
+                </div>
+                <div class="featurect">
+                    <div class="featurectd1">
+                        <h3>The Gokulam Society</h3>
+                        <p class="a">By The Golok Group</p>
+                        <p class="a">Sector 145 , Noida</p>
+                        <p class="featurectp">Marketed By Golok Real Estate</p>
+                    </div>
+                    <div class="featurectd2">
+                        <p class="a" style="padding-left: 36%">2,3 BHK Flats</p>
+                        <p style="font-size: 15px;
+                        padding-left: 4px;">
+                            <span></span>&#8377;<b>1.61 crore</b>
+                            <span class="a">onwards</span>
+                        </p>
+                        <p class="featurectd2p">OFFER</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- number bar start here  -->
+    <div class="number">
+        <a href="#" class="na">Previous</a>
+        <a href="#">1 &nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp; &nbsp; 3 &nbsp; &nbsp; &nbsp; ... &nbsp; &nbsp; &nbsp;
+            145</a>
+        <a href="#" class="na">Next</a>
+    </div>
+
+
+
+
+
+    <!-- partof banner start here  -->
+
+    <div class="partof">
+        <img src="pic/Screenshot 2022-07-14 160944.png" alt="" />
+    </div>
+
+    <!-- upperfooter start here -->
+    <div class="upperfooter">
+        <div class="upperfooterdiv1">
+            <p class="upfd1p">About <b>Aashiyana</b></p>
+            <p class="upfd1p2">
+                Launched in 2022, Aashiyana is India's No.1 online Property
+                marketplace to buy, sell, and rent residential and commercial
+                properties. Adjudged as the most preferred real estate portal in India
+                by various independent surveys.
+            </p>
+            <div class="upperfooterdiv1d">
+                <div class="upperfooterdiv1dd1">
+                    <button class="pb1">
+                        <i class="fa fa-google fa-lg" aria-hidden="true"></i>
+                        <span><b>Google Play</b></span>
+                    </button>
+                    <button class="pb2">
+                        <i class="fa fa-apple fa-lg" aria-hidden="true"></i>
+                        <span><b>App Store</b></span>
+                    </button>
+                </div>
+                <div class="upperfooterdiv1dd2">
+                    <a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true" style="color: #4267b2"></i>
+                        &nbsp;</a>
+                    <a href="#"><i class="fa fa-youtube-square fa-2x" aria-hidden="true"
+                            style="color: #ff0000"></i>&nbsp;</a>
+                    <a href="#">
+                        <i class="fa fa-twitter-square fa-2x" aria-hidden="true" style="color: #00acee"></i>
+                        &nbsp;</a>
+                    <a href="#">
+                        <i class="fa fa-linkedin-square fa-2x" aria-hidden="true" style="color: #0072b1"></i>&nbsp;</a>
+                </div>
+            </div>
+        </div>
+        <div class="upperfooterdiv2">
+            <div class="upfd2d1">
+                <p class="upfd2d1p">Properties in India</p>
+                <ul class="upfd2d1ul">
+                    <li><a href="#">Property in Noida</a></li>
+                    <li><a href="#">Property in Delhi</a></li>
+                    <li><a href="#">Property in Gurgaon</a></li>
+                    <li><a href="#">Property in Kolkata</a></li>
+                </ul>
+                <ul class="upfd2d1ul2">
+                    <li><a href="#">Property in Mumbai</a></li>
+                    <li><a href="#">Property in Pune</a></li>
+                    <li><a href="#">Property in Bangalore</a></li>
+                    <li><a href="#">Property in Goa</a></li>
+                </ul>
+            </div>
+            <div class="upfd2d2">
+                <p class="upfd2d2p">New Projects in India</p>
+                <ul class="upfd2d2ul">
+                    <li><a href="#">Projects in Noida</a></li>
+                    <li><a href="#">Projects in Delhi</a></li>
+                    <li><a href="#">Projects in Gurgaon</a></li>
+                    <li><a href="#">Projects in Kolkata</a></li>
+                </ul>
+                <ul class="upfd2d2ul2">
+                    <li><a href="#">Projects in Mumbai</a></li>
+                    <li><a href="#">Projects in Pune</a></li>
+                    <li><a href="#">Projects in Bangalore</a></li>
+                    <li><a href="#">Projects in Goa</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- lower footer start here -->
+
+    <div class="lowerfooter">
+        <ul class="lowerfooterul">
+            <a href="#">
+                <li>Sitemap</li>
+            </a>
+            <a href="#">
+                <li>Terms & Conditions</li>
+            </a>
+            <a href="#">
+                <li>Privacy Policy</li>
+            </a>
+            <a href="#">
+                <li>Blog</li>
+            </a>
+            <a href="#">
+                <li>Careers</li>
+            </a>
+            <a href="#">
+                <li>Testimonials</li>
+            </a>
+            <a href="#">
+                <li>Feedback</li>
+            </a>
+            <a href="#">
+                <li>Unsubscribe</li>
+            </a>
+            <a href="#">
+                <li>Help Center</li>
+            </a>
+            <a href="#">
+                <li>Sales Enquiry</li>
+            </a>
+            <a href="#">
+                <li>Buy Our Services</li>
+            </a>
+        </ul>
+    </div>
+
+    <!-- disclaimer start here -->
+
+    <div class="dis">
+        <p>
+            <b>Disclaimer:</b> Aashiyana Services Limited is only an intermediary
+            offering its platform to advertise properties of Seller for a
+            Customer/Buyer/User coming on its Website and is not and cannot be a
+            party to or privy to or control in any manner any transactions between
+            the Seller and the Customer/Buyer/User. All the offers and discounts on
+            this Website have been extended by
+            <a href="#" style="color: rgba(18, 98, 215, 1)" class="abcdefrt">Read more</a>
+        </p>
+    </div>
+
+    <!-- trademark start here -->
+
+    <div class="trade">
+        <p>
+            All trademarks, logos and names are properties of their respective
+            owners. All Rights Reserved. © Copyright 2022 Aashiyana Services Limited
+        </p>
+    </div>
+
+
+
+
+</body>
+
+</html>
